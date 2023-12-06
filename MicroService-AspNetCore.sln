@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34302.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{09B6EB4D-E82B-41C0-B44D-9D888BA218D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GateWay", "GateWay", "{01B107E5-5A61-4E53-8E2E-48D2EDD62FDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{E53693D8-BD49-4CE1-8C03-CAC8E093C2C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{BED189E1-3284-40EC-83C3-F87E73E54FC6}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FD39EB2-51BA-4B3F-A6D8-A9E7779974E1}
+	EndGlobalSection
+EndGlobal
