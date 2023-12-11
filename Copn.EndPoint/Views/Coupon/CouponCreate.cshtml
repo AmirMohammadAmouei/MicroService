@@ -1,0 +1,29 @@
+﻿@model CouponDto
+
+<form asp-controller="Coupon" asp-action="CouponCreate" method="post">
+    <fieldset>
+        <legend>Create Coupon</legend>
+        <div class="form-group w-25">
+            <label class="form-label mt-4" asp-for="CouponCode">Coupon Code</label>
+            <input type="text" class="form-control" asp-for="CouponCode">
+            <span class="text-danger" asp-validation-for="CouponCode"></span>
+        </div>
+        <div class="form-group  w-25">
+            <label class="form-label mt-4" asp-for="DiscountAmount">Discount Amount</label>
+            <input type="text" class="form-control" asp-for="DiscountAmount">
+            <span class="text-danger" asp-validation-for="DiscountAmount"></span>
+        </div>
+        <div class="form-group  w-25">
+            <label class="form-label mt-4" asp-for="MinAmount">Min Amount</label>
+            <input type="text" class="form-control" asp-for="MinAmount">
+            <span class="text-danger" asp-validation-for="MinAmount"></span>
+        </div>
+
+        <button type="submit" class="btn btn-dark mt-3">Submit</button>
+        <a class="btn btn-light mt-3" asp-controller="Coupon" asp-action="Index">Back to list</a>
+    </fieldset>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CouponDto>
+
+
+<a class="btn btn-dark mt-4" asp-controller="Coupon" asp-action="CouponCreate">Create New Coupon</a>
+@if (Model.Any())
+{
+    <table class="table table-striped table-dark mt-3">
+
+        <thead>
+            <tr>
+
+                <th scope="col">CouponCode</th>
+                <th scope="col">DiscountAmount</th>
+                <th scope="col">MinAmount</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.CouponCode</td>
+                    <td>@item.DiscountAmount</td>
+                    <td>@item.MinAmount$</td>
+                    <td>
+                        <a asp-action="CouponDelete" asp-route-id="@item.Id">
+                            <i class="fa fa-duotone fa-trash mx-4 text-light icon-link-hover" style="font-size:30px"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h1 class="text-danger align-content-center">No data was inserted!</h1>
+}
